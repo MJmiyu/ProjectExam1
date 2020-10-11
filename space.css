@@ -1,0 +1,32 @@
+#iss-map {
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+}
+
+#people-in-space-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.person-container {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #iss-map {
+    margin: 5px;
+    max-width: calc(100% - 10px);
+    height: 300px;
+    box-sizing: border-box;
+  }
+  #people-in-space-container {
+    margin: 20px 5px;
+    width: unset;
+  }
+}

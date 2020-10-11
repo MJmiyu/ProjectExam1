@@ -1,0 +1,16 @@
+#daily-picture-container {
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+}
+#daily-picture-container > img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #daily-picture-container {
+    max-width: 100%;
+  }
+}

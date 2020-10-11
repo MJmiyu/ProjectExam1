@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="popular space images"
+      content="This page contains random generated pictures from NASA's most popular images"
+    />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="images.css" />
+    <title>Pictures</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="button" href="/index.html">Home</a>
+        <a class="button" href="/launches.html">Launches</a>
+        <a class="button" href="/space.html">Space Activies</a>
+        <a class="button" href="/images.html">Pictures</a>
+        <a class="button" href="/contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="dark-background centered-container">
+      <h1>Popular Space Pictures</h1>
+      <p>
+        Here you can look at 9 random generated photos taken from NASA's popular
+        images page they have. Press the refresh button to see more images.
+      </p>
+      <button class="button" onclick="refreshImages()">Refresh</button>
+    </section>
+    <section>
+      <section id="popular-images-container"></section>
+    </section>
+    <footer>Space, an awesome place!</footer>
+    <script src="common.js"></script>
+    <script src="images.js"></script>
+  </body>
+</html>

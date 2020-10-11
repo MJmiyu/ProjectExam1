@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="contact us" content="Here is a form where you can contact us" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="button" href="/index.html">Home</a>
+        <a class="button" href="/launches.html">Launches</a>
+        <a class="button" href="/space.html">Space Activies</a>
+        <a class="button" href="/images.html">Pictures</a>
+        <a class="button" href="/contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="centered-container dark-background">
+      <h1>Contact Us!</h1>
+      <p>Here you can send us a message with any questions you might have.</p>
+      <form id="contact-form" onsubmit="return submitForm()">
+        <label for="name-input">Name</label>
+        <input
+          class="contact-form-input"
+          placeholder="name"
+          id="name-input"
+          type="text"
+        />
+        <label for="email-input">Email</label>
+        <input
+          class="contact-form-input"
+          placeholder="johndoe@example.com"
+          id="email-input"
+          type="text"
+        />
+        <label for="message-input">Message</label>
+        <textarea
+          class="contact-form-input"
+          placeholder="message"
+          id="message-input"
+          type="textarea"
+          rows="3"
+        ></textarea>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>Space, an awesome place!</footer>
+    <script src="common.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
