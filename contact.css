@@ -22,6 +22,12 @@
   padding: 5px 10px;
 }
 
+.contact-form-input:focus {
+  background: #000000;
+  color: #fff;
+  box-shadow: 0 0 3px 3px #fafafa99;
+}
+
 .contact-form-input::placeholder {
   text-align: center;
   color: #ffffff99;

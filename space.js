@@ -16,10 +16,10 @@ async function renderISSMap() {
   map.setView([latitude, longitude], 3);
 
   L.circle([latitude, longitude], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500,
+    color: 'blue',
+    fillColor: '#00f',
+    fillOpacity: 1,
+    radius: 1000,
   }).addTo(map);
 }
 
@@ -29,11 +29,6 @@ async function getISSPosition() {
   const longitude = ISSNow.iss_position.longitude;
   return { latitude, longitude };
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-  renderISSMap();
-  renderPeopleInSpace();
-});
 
 async function renderPeopleInSpace() {
   const peopleInSpace = await callApi('http://api.open-notify.org/astros.json');
@@ -58,3 +53,8 @@ async function renderPeopleInSpace() {
     peopleInSpaceContainer.appendChild(personContainer);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  renderPeopleInSpace();
+  renderISSMap();
+});

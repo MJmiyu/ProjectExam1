@@ -1,26 +1,23 @@
 const isEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,3}$/gi;
 
 function submitForm() {
-  let error = false;
-
   const name = document.getElementById('name-input').value;
   if (!name.length) {
-    error = true;
-  }
-
-  const message = document.getElementById('message-input').value;
-  if (!message.length) {
-    error = true;
+    window.alert('Missing name');
+    return false;
   }
 
   const email = document.getElementById('email-input').value;
   if (!isEmail.test(email)) {
-    error = true;
-  }
-
-  if (error) {
+    window.alert('Missing a valid email');
     return false;
   }
 
+  const message = document.getElementById('message-input').value;
+  if (!message.length) {
+    window.alert('Missing message');
+    return false;
+  }
+  window.alert('Successfully submitted');
   return true;
 }

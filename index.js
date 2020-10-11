@@ -10,6 +10,7 @@ async function renderPage() {
   const dailyPictureImg = document.createElement('img');
   dailyPictureImg.src = dailyPicture.url;
   dailyPictureImg.alt = dailyPicture.title;
+  dailyPictureImg.title = dailyPicture.title;
 
   dailyPictureContainer.appendChild(dailyPictureImg);
 
